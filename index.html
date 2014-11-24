@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<link rel="stylesheet" type="text/css" href="./style/css/login/login.css" />
+	</head>
+	<body>
+		
+		<div class="header">
+			<h1 class="title">My Book</h1>
+			<div class = "input">
+				<form  name="myForm" action="./view/book.html" onsubmit="return(login());">
+					 <input type="text" id="userName" placeholder="User Name"/>
+					 <input type="password" id="password" placeholder="Password"/>
+					 <input value="Sign In" type="submit"/>
+				</form>
+			</div>
+		</div>
+
+		<div class="content">
+			<img src="./style/resources/login_group_member.jpeg" class="login_image" height="508" width="1000"/>
+		</div>
+
+		<div class="footer">
+			Talent Improving exercise, OFS
+		</div>
+		<script src="./js/login.js">
+		</script>
+	</body>
+</html>

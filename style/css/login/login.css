@@ -1,0 +1,44 @@
+html, body {
+	width : 100%;
+	height : 100%;
+	padding:0;
+    margin:0;
+}
+
+.header {
+	height : 80px;
+	background:#91DAF5;
+}
+
+.content {
+	height : calc(100% - (80px + 50px));
+	background:#91DA85;
+}
+
+.title {
+	float:left;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size : 30px;
+	padding-left: 60px; 
+}
+
+.input {
+	padding-top: 30px; 
+	float:right;
+	padding-right: 30px; 
+}
+
+.content img {
+	max-width:100%; 
+	max-height:100%;
+}
+
+.footer {
+	height : 50px;
+	background:#89DAF5;
+	text-align: center;
+	padding-top: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+    text-transform:uppercase;
+    font-size : 30px;
+}
