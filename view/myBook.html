@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<link rel="stylesheet" type="text/css" href="../style/css/book/myBook.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/book/feed.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/book/profile.css" />
+ 	<title>Book MainPage</title>
+ </head>
+ 
+ <body>
+    <div class="header">
+			<h1 class="title">My Book</h1>
+			<button class="signout" onclick="signout()">Sign out</button>
+    </div>
+
+    <div class="content">
+    	<div class="menu block">
+    		<button type="button" class="menuButton block" onclick="showFeedOrProfile('feed')">Feed</button>
+    		<br/>
+    		<button type="button" class="menuButton block" onclick="showFeedOrProfile('profile')">Profile</button>
+    	</div>
+    	
+    	<div id="feed" class="feed inline">
+			<textarea rows="2" cols="100" id="postFeed" class="feedTextfield" placeholder="Text Feed to URL Feed"></textarea>
+			<button class="feedPostButton inline" onclick="createFeed()">Post</button>
+			<div id="feeds">
+			</div>
+    	</div>
+    	
+    	<div id ="profile" class="profile inline">
+ 			<form  name="myForm" action="myBook.html" class="profileForm" onsubmit="return false;">
+				 <input type="text" id="name" class="profileForm" placeholder="Name" onchange="profileFieldChanged()"/>
+				 <div class="profileStarImage"><img src="../style/resources/star.jpg" class="profileStarImage"/></div>
+				 <input type="text" id="age" class="profileForm" placeholder="Age" onchange="profileFieldChanged()"/>
+				 <div class="profileStarImage"><img src="../style/resources/star.jpg" class="profileStarImage"/></div>
+				 <input type="text" id="phone" class="profileForm" placeholder="Phone" onchange="profileFieldChanged()"/>
+				 <div class="profileStarImage"><img src="../style/resources/star.jpg" class="profileStarImage"/></div>
+				 <input type="text" id="email" class="profileForm" placeholder="Email" onchange="profileFieldChanged()"/>
+				 <div class="profileStarImage"><img src="../style/resources/star.jpg" class="profileStarImage"/></div>				 
+				 <textarea rows="4" cols="100" id="address" class="profileForm" placeholder="Address"></textarea>
+				 <input type="file" class="profileForm" onchange="chooseImage(this)" />
+				 <input type="submit" value="Save" id="saveProfileButton" class="profileForm" onclick="saveProfile()" disabled/>
+			</form> 
+			 <span>
+				 	<img class="profileImage" id="profileImage"/>
+			 </span>
+    	</div>
+    </div>
+    
+    <div class="footer">
+		Talent Improving exercise, OFS
+    </div>
+	<script src="../js/myBook.js" ></script>
+ </body>
+</html>

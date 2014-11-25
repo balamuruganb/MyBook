@@ -1,39 +1,45 @@
-.title {
-	float:left;
-	font-family: 'Source Sans Pro', sans-serif;
-    font-size : 30px;
-	padding-left: 75px; 	
+.profile {
+    width :calc(100% - 100px);
+    float:left;
+    height:100%;
+	background:#91AA85;
 }
 
-header {
-	width:100%;
-	height:80px;
-	position:top;
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-    text-transform:uppercase;
-    font-weight : 300;
-    font-size : 14px;
+form.profileForm {
+	
+	margin-top : 70px;
+}
+
+.profileForm {
+	display: block;
+	width: 220px;
+	margin-left : 180px;
+	margin-top : 21px;
+	height : 20px;
+}
+
+.profileStarImage {
+	margin-left : 200px;
+	display: inline;
+}
+
+.profileTextArea {
+	height : 40px;
+}
+
+.profileImage {
+	width: 100px;
+}
+
+.profileImageSubmit {
+	width: 50px;
+	display: inline;
 }
 
 
-footer {
-	width:100%;
-	height:40px;
-	position:absolute;
-	bottom:0;
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-    text-transform:uppercase;
-    font-weight : 300;
-    font-size : 14px;
+.profileImage {
+	width : 150px;
+	height : 150px;
+	float : right;
+	padding-right : 300px;
 }
-
-table.td {
- margin-right: 0.5cm;
-}
-
-input{
- size : 30;
-}
-

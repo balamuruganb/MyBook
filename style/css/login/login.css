@@ -7,12 +7,17 @@ html, body {
 
 .header {
 	height : 80px;
-	background:#91DAF5;
+	background:#F5DEB3;
 }
 
 .content {
-	height : calc(100% - (80px + 50px));
+	height : calc(100% - 130px);
 	background:#91DA85;
+}
+
+.content img {
+	width:100%; 
+	height:100%;
 }
 
 .title {
@@ -35,10 +40,10 @@ html, body {
 
 .footer {
 	height : 50px;
-	background:#89DAF5;
+	background:#E3B98F;
 	text-align: center;
-	padding-top: 25px;
 	font-family: 'Source Sans Pro', sans-serif;
     text-transform:uppercase;
-    font-size : 30px;
+    font-size : 25px;
 }
+

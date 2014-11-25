@@ -1,0 +1,61 @@
+html, body {
+	width : 100%;
+	height : 100%;
+	margin : 0;
+	padding : 0;
+}
+
+.header {
+	height : 80px;
+	background:#F5DEB3;
+}
+
+.content {
+	height : calc(100% - 130px);
+	width:100%;
+}
+
+.menu {
+    background-color:#eeeeee;
+    height:100%;
+    width:100px;
+    float:left;
+}
+
+.footer {
+	height : 50px;
+	background:#E3B98F;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    text-transform:uppercase;
+    font-size : 25px;
+}
+
+.title {
+	float:left;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size : 30px;
+	padding-left: 60px; 
+}
+
+.inline {
+
+  float : left;	
+}
+
+.block {
+	display: block;	
+}
+
+.menuButton {
+	margin-left : 10px;
+	margin-top : 10px;
+	width : 60px;
+	height : 30px;
+}
+
+.signout {
+	float:right;
+	margin-right : 10px;
+	margin-top : 27px;
+}
